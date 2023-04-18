@@ -7,6 +7,7 @@ import { LayoutPageComponent } from './pages/layoutPage/layoutPage.component';
 import { ListPageComponent } from './pages/listPage/listPage.component';
 import { NewHeroPageComponent } from './pages/newHeroPage/newHeroPage.component';
 import { SearchPageComponent } from './pages/searchPage/searchPage.component';
+import { MaterialModule } from '../material/material.module';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,6 @@ import { SearchPageComponent } from './pages/searchPage/searchPage.component';
     NewHeroPageComponent,
     SearchPageComponent,
   ],
-  imports: [CommonModule, HeroesRoutingModule],
+  imports: [CommonModule, HeroesRoutingModule, MaterialModule],
 })
 export class HeroesModule {}

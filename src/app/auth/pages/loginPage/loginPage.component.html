@@ -1,3 +1,22 @@
-<p>
-  loginPage works!
-</p>
+<div class="flex flex-column">
+  <span class="text-lg mb-4">Login</span>
+
+  <mat-form-field>
+    <mat-label>User:</mat-label>
+    <input type="text" matInput placeholder="Juan, Pablo, Miguel" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Password:</mat-label>
+    <input type="password" matInput placeholder="******" />
+  </mat-form-field>
+
+  <button mat-button mat-flat-button color="primary">
+    <mat-icon>save</mat-icon>
+    Login
+  </button>
+
+  <div class="flex justify-content-end mt-5">
+    <a routerLink="/auth/register">Create count</a>
+  </div>
+</div>
